@@ -1,24 +1,25 @@
 # Ignore everything by default
 *
 
-# Keep folders so Git can traverse them
+# Keep directories so Git can recurse into the repo
 !*/
 
-# Keep C++ source files anywhere in the repo
+# Keep C++ source files
 !*.cpp
 !**/*.cpp
 
-# Keep the ignore file itself if wanted
+# Keep the ignore file itself
 !.gitignore
 
-# Ignore generated / compiled artifacts
-# Apple debug metadata produced by compilers; must match nested folders too
+# Ignore Apple debug metadata at any depth
+*.dSYM/
+*.dSYM/**
 **/*.dSYM/
 **/*.dSYM/**
 **/.dSYM/
 **/.dSYM/**
 
-# macOS metadata files
+# Ignore macOS metadata
 .DS_Store
 **/.DS_Store
 
