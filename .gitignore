@@ -1,0 +1,27 @@
+# macOS metadata
+.DS_Store
+
+# Ignore all files with no extension (compiled binaries)
+*
+!*.*
+
+# Whitelist standard source files & build configs so they aren't ignored
+!*.cpp
+!*.c
+!*.h
+!*.hpp
+!*.in
+!*.out
+!*.txt
+!*.json
+!*.md
+!*.sh
+!Makefile
+!.gitignore
+
+# Explicitly ignore object files & dSYM debug folders (macOS)
+*.o
+*.out
+*.dSYM/
+dlsym
+dlsym/
