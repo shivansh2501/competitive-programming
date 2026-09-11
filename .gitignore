@@ -1,26 +1,20 @@
-# macOS System Metadata & Debug Folders
-.DS_Store
-*.dSYM/
-
-# Ignore all extensionless compiled binaries (top-level and subfolders)
+# Ignore everything by default
 *
+
+# Keep folders so Git can traverse them
 !*/
-!*.*
 
-# Explicitly ignore compiled object/library files
-*.o
-*.out
-
-# Whitelist source, header, test I/O, and config files
+# Keep C++ source files anywhere in the repo
 !*.cpp
-!*.c
-!*.h
-!*.hpp
-!*.in
-!*.txt
-!*.json
-!*.md
+!**/*.cpp
+
+# Keep the ignore file itself if wanted
 !.gitignore
-!Makefile
+
+# Ignore generated / compiled artifacts
+*.dSYM/
+**/*.dSYM/
+*.dSYM/**
+.DS_Store
 
 
