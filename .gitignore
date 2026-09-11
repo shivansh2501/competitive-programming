@@ -12,12 +12,10 @@
 !.gitignore
 
 # Ignore generated / compiled artifacts
-# Apple debug metadata produced by compilers
-*.dSYM/
+# Apple debug metadata produced by compilers; must match nested folders too
 **/*.dSYM/
-**/.dSYM/
-*.dSYM/**
 **/*.dSYM/**
+**/.dSYM/
 **/.dSYM/**
 
 # macOS metadata files
