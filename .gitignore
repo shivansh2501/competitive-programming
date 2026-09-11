@@ -12,9 +12,16 @@
 !.gitignore
 
 # Ignore generated / compiled artifacts
+# Apple debug metadata produced by compilers
 *.dSYM/
 **/*.dSYM/
+**/.dSYM/
 *.dSYM/**
+**/*.dSYM/**
+**/.dSYM/**
+
+# macOS metadata files
 .DS_Store
+**/.DS_Store
 
 
